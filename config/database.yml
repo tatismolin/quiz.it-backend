@@ -11,12 +11,12 @@ default: &default
 
 development:
   <<: *default
-  database: backend_development
+  database: quizIt_backend_development
 
 test:
   <<: *default
-  database: backend_test
+  database: quizIt_backend_test
 
 production:
   <<: *default
-  database: backend_production
+  database: quizIt_backend_production
