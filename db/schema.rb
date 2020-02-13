@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_12_26_010237) do
 
+  enable_extension "plpgsql"
+
+
   create_table "cards", force: :cascade do |t|
     t.string "name"
     t.text "content"
