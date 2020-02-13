@@ -31,8 +31,8 @@ class DashboardsController < ApplicationController
         @dashboard = Dashboard.find(params[:id])
     end
 
-    def dashboards_params
-        params.require(:dashboard).permit(:name)
+    def dashboard_params
+        params.require(:dashboard).permit(:name, :user_id)
     end
 
 end
